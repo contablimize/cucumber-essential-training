@@ -20,11 +20,11 @@ Given('Sales tax rate is {float} percent', function (rate) {
 });
 
 async function invokeWebpage(expectedValue) {
-    let driver = new Builder()
+    let driver = await new Builder()
         .forBrowser('chrome')
         .build();
 
-    driver.get('http://localhost:3000/index.html');
+    await driver.get('http://localhost:3000/index.html');
     billAmountTextBox = await driver.findElement(By.id('billAmount'));
     taxRateTextBox = await driver.findElement(By.id('taxRate'));
     button = await driver.findElement(By.id('myButton'));
