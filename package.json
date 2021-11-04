@@ -4,15 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test2": "./node_modules/.bin/cucumber-js ch02/features/*.feature",
-    "test3": "./node_modules/.bin/cucumber-js ch03/features/*.feature",
-    "test4": "./node_modules/.bin/cucumber-js ch04/features/*.feature --tags 'not @SmokeTest' --format html:cucumber-report.html --format json:cucumber-report.json",
-    "smoke-test": "./node_modules/.bin/cucumber-js ch04/features/*.feature --tags '@SmokeTest' --format html:cucumber-report.html --format usage",
-    "dry-run": "./node_modules/.bin/cucumber-js ch04/features/*.feature --dry-run",
-    "monochrome": "./node_modules/.bin/cucumber-js ch04/features/*.feature --format-options '{\"colorsEnabled\": false}'",
-    "test5": "./node_modules/.bin/cucumber-js ch05/features/*.feature",
+    "test2": "cucumber-js ch02/features/*.feature",
+    "test3": "cucumber-js ch03/features/*.feature",
+    "test4": "cucumber-js ch04/features/*.feature --tags 'not @SmokeTest' --format html:cucumber-report.html --format json:cucumber-report.json",
+    "smoke-test": "cucumber-js ch04/features/*.feature --tags '@SmokeTest' --format html:cucumber-report.html --format usage",
+    "dry-run": "cucumber-js ch04/features/*.feature --dry-run",
+    "monochrome": "cucumber-js ch04/features/*.feature --format-options '{\"colorsEnabled\": false}'",
+    "test5": "cucumber-js ch05/features/*.feature",
     "website": "node ch06/index.js",
-    "test6": "./node_modules/.bin/cucumber-js ch06/features/*.feature"
+    "test6": "cucumber-js ch06/features/*.feature"
   },
   "author": "",
   "license": "ISC",
